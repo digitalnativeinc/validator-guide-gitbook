@@ -14,7 +14,7 @@ Github Actions pipeline for Docker images can be found [here](https://github.com
 
 ### Use published image
 
-docker-compose script is available in Standard Substrate repository [here](https://raw.githubusercontent.com/digitalnativeinc/standard-substrate/master/Docker/docker-compose.yml).
+Docker compose script is available in Standard Substrate repository [here](https://raw.githubusercontent.com/digitalnativeinc/standard-substrate/master/Docker/docker-compose.yml).
 
 #### Run docker-compose script
 

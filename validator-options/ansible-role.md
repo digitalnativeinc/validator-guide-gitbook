@@ -4,10 +4,6 @@ In order to automate deployment and configuration of nodes, we provide Ansible R
 
 Role link: [https://github.com/digitalnativeinc/ansible-role-substrate-deployer](https://github.com/digitalnativeinc/ansible-role-substrate-deployer)
 
-{% hint style="danger" %}
-This role is still in development, tread carefully.
-{% endhint %}
-
 ### Pre-requisites
 
 * Ansible installed

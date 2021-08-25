@@ -24,7 +24,7 @@ curl -fsSL https://raw.githubusercontent.com/digitalnativeinc/standard-substrate
     export FILE="/usr/local/bin/opportunity-standalone"
 
     # stops the process
-    sudo systemctl stop standard-validator
+    sudo systemctl stop opportunity-standalone
 
     # moves binary to be a backup
     mv $FILE $FILE-backup
@@ -39,10 +39,10 @@ curl -fsSL https://raw.githubusercontent.com/digitalnativeinc/standard-substrate
     chmod +x $FILE
 
     # restart the service
-    systemctl start standard-validator
+    systemctl start opportunity-standalone
 
     # check it started up correctly
-    systemctl status standard-validator --no-pager -o cat
+    systemctl status opportunity-standalone --no-pager -o cat
 
     # check logs to see if there are any issues
     journalctl -u standard-validator -f

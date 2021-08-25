@@ -67,7 +67,7 @@ OR
 docker run opportunity-standalone:local
 
 # create separate volume for docker for persistence
-docker volume create standard-validator-volume
+docker volume create opportunity-standalone-volume
 ```
 
 ### Run published image
@@ -77,9 +77,9 @@ docker volume create standard-validator-volume
 ```bash
 # start node
 docker run -itd \
---volume standard-validator-volume:/data \
---name standard-validator \
-standardprotocol/opportunity-standalone \
+--volume opportunity-standalone-volume:/data \
+--name opportunity-standalone \
+standardprotocol/opportunity-standalone:latest \
 --base-path /data --name <node-name>
 ```
 {% endtab %}
@@ -99,7 +99,7 @@ standardprotocol/opportunity-standalone \
 # start node
 docker run -itd \
 --volume standard-validator-volume:/data \
---name standard-validator \
+--name opportunity-standalone \
 opportunity-standalone:local \
 --base-path /data --name <node-name>
 ```
@@ -116,6 +116,6 @@ make docker-run VOLUME_PATH='./data' DATA_DIR='/data' NODE_NAME='Standard Valida
 ### Check logs
 
 ```bash
-docker logs standard-validator -f
+docker logs opportunity-standalone -f
 ```
 

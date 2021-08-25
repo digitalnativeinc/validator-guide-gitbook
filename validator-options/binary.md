@@ -135,7 +135,7 @@ _You will need to adjust several settings from the snippet below, e.g. &lt;data-
 {% endhint %}
 
 {% tabs %}
-{% tab title="Ubuntu 20.04" %}
+{% tab title="Ubuntu Linux" %}
 ```text
 # ensure binary is executable
 chmod +x ./opportunity-standalone
@@ -144,12 +144,11 @@ chmod +x ./opportunity-standalone
 mv opportunity-standalone /usr/local/bin
 
 # create systemd unit file
-touch /etc/systemd/system/standard-validator.service
+touch /etc/systemd/system/opportunity-standalone.service
 
 # paste content into the file
-# copy everything to line 26 inclusive
-# !!! requires changes from user
-cat > /etc/systemd/system/standard-validator.service << EOF
+# copy everything line 12-28 inclusive
+cat > /etc/systemd/system/opportunity-standalone.service << EOF
 [Unit]
 Description=Standard Validator
 
@@ -171,19 +170,13 @@ EOF
 systemctl daemon-reload
 
 # enable validator service to run on boot
-systemctl enable standard-validator
+systemctl enable opportunity-standalone
 
 # start the service
-systemctl start standard-validator
+systemctl start opportunity-standalone
 
 # check status of the service
-systemctl status standard-validator
-```
-{% endtab %}
-
-{% tab title="Ubuntu 18.04" %}
-```text
-TBD
+systemctl status opportunity-standalone
 ```
 {% endtab %}
 {% endtabs %}

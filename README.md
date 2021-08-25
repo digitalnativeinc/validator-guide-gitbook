@@ -8,10 +8,6 @@ Thank you for choosing to be a Validator with Standard Protocol! 🎉
 
 This space will outline different options and guides on how to start as a Validator in Standard Protocol ecosystem. This assumes running Validator for Standard Protocol **Testnet**.
 
-{% hint style="warning" %}
-This space is still under development, as we will add more information as we go.
-{% endhint %}
-
 ### Prerequisites
 
 * Proficiency with systems administration on Linux.
@@ -34,14 +30,14 @@ This space is still under development, as we will add more information as we go.
 |   |   | armv6 | 🟡 |
 |   |   | armv7 | 🟡 |
 |   |   | armv8 | 🟡 |
-|   | darwin | amd64 | 🟢 |
+|   | darwin | amd64 | 🟡 |
 |  **** |   | armv8 | 🟡 |
 |   | windows | \* | 🔴 |
 | **Docker Build** | linux | amd64 | 🟢 |
-|   | darwin | amd64 | 🟢 |
+|   | darwin | amd64 | 🟡 |
 |   | windows | \* | 🔴 |
 
 {% hint style="warning" %}
-Some options for OS/ARCH may indicate support, but require specific dependencies, e.g. glibc library.
+Some options for OS/ARCH may indicate support, but would have other dependencies, e.g. specific versions of **glibc** library.
 {% endhint %}
 
