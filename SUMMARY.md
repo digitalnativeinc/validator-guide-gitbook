@@ -4,13 +4,16 @@
 * [Support](support.md)
 * [Development Roadmap](development-roadmap.md)
 
-## Validator Setup <a id="validator-options"></a>
+## Opportunity Validator Setup <a href="#validator-options" id="validator-options"></a>
 
 * [Standalone Binary](validator-options/binary.md)
 * [Ansible Role](validator-options/ansible-role.md)
 * [Docker](validator-options/docker.md)
 * [Docker Compose](validator-options/docker-compose.md)
-* [CSPs](validator-options/csps.md)
+
+## Unorthodox Collator Setup
+
+* [Standalone Binary](unorthodox-collator-setup/standalone-binary.md)
 
 ## Testnet Staking Guide
 
@@ -22,7 +25,7 @@
   * [Becoming a Nominator](testnet-staking-guide/bonding-opt-token/becoming-a-nominator.md)
   * [Becoming a Validator](testnet-staking-guide/bonding-opt-token/becoming-a-validator.md)
 
-## Validator Maintenance <a id="validator-run"></a>
+## Validator Maintenance <a href="#validator-run" id="validator-run"></a>
 
 * [Overview](validator-run/maintenance-overview.md)
 * [Upgrade](validator-run/upgrade.md)
@@ -34,11 +37,10 @@
 
 * [Oracle Binary](provider-setup/oracle-binary.md)
 
----
+***
 
 * [Opportunity Testnet Telemetry](https://telemetry.polkadot.io/#/Opportunity%20Standalone%20Testnet)
 * [Standard Github Repository](https://github.com/digitalnativeinc/standard-substrate)
 * [Standard Website](https://standard.tech)
 * [DockerHub images](https://hub.docker.com/r/standardprotocol/standard-opportunity)
-* [Ansible Substrate Deployer Role](https://galaxy.ansible.com/standardtech_bot/substrate_deployer)
-
+* [Ansible Substrate Deployer Role](https://galaxy.ansible.com/standardtech\_bot/substrate\_deployer)

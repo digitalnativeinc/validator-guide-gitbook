@@ -1,8 +1,10 @@
----
-description: Instruction on how to run Standard Protocol Testnet binary.
----
-
 # Standalone Binary
+
+{% hint style="warning" %}
+### Unorthodox network is not live yet
+
+These instructions may update at any time.
+{% endhint %}
 
 ## Pre-requisites
 
@@ -102,7 +104,7 @@ Depending on machine specifications, this build will run for between 30 and 90 m
 {% tabs %}
 {% tab title="Command" %}
 ```
-cargo build --release --bin opportunity-standalone
+cargo build --release --bin standard-collator
 ```
 {% endtab %}
 
@@ -140,22 +142,22 @@ _You will need to adjust several settings from the snippet below, e.g. \<data-di
 {% tab title="Ubuntu Linux" %}
 ```
 # ensure binary is executable
-chmod +x ./opportunity-standalone
+chmod +x ./standard-collator
 
 # move binary to the bin folder
-mv opportunity-standalone /usr/local/bin
+mv standard-collator /usr/local/bin
 
 # create systemd unit file
-touch /etc/systemd/system/opportunity-standalone.service
+touch /etc/systemd/system/standard-collator.service
 
 # paste content into the file
 # copy everything line 12-28 inclusive
-cat > /etc/systemd/system/opportunity-standalone.service << EOF
+cat > /etc/systemd/system/standard-collator.service << EOF
 [Unit]
-Description=Standard Validator
+Description=Standard Collator
 
 [Service]
-ExecStart=/usr/local/bin/opportunity-standalone \
+ExecStart=/usr/local/bin/standard-collator \
 --base-path <data-dir> \
 --chain opportunity \
 --port 30333 \
@@ -172,13 +174,13 @@ EOF
 systemctl daemon-reload
 
 # enable validator service to run on boot
-systemctl enable opportunity-standalone
+systemctl enable standard-collator
 
 # start the service
-systemctl start opportunity-standalone
+systemctl start standard-collator
 
 # check status of the service
-systemctl status opportunity-standalone
+systemctl status standard-collator
 ```
 {% endtab %}
 {% endtabs %}
